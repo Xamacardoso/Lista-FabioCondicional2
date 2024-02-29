@@ -155,3 +155,31 @@ export function maioresmedia5(n1,n2,n3,n4,n5,media){
     }
     return maiores
 }
+
+export function calculadora(n1,n2,opcao){
+    if (opcao == 1){
+        write(`    SOMA >>> ${n1} + ${n2} = ${n1+n2}`)
+    }else if (opcao == 2){
+        write(`    SUBTRACAO >>> ${n1} - ${n2} = ${n1-n2}`)
+    }else if (opcao == 3){
+        write(`    MULTIPLICACAO >>> ${n1} x ${n2} = ${n1*n2}`)
+    }else if (opcao == 4){
+        write(`    DIVISAO >>> ${n1} / ${n2} = ${n1/n2}`)
+    }
+}
+
+export function imc(altura,peso){
+    return peso / altura**2
+}
+
+export function quad(angulo){
+    if (angulo <= 90){
+        return Number(1)
+    }else if (angulo <= 180){
+        return Number(2)
+    }else if (angulo <= 270){
+        return Number(3)
+    }else if (angulo <= 360){
+        return Number(4)
+    }
+}
